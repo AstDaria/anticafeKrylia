@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>mainpage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=0, maximum-scale=0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="js/lightbox.min.js"></script>	
+		<script type="text/javascript">
+			
+			function init()
+			{				
+				var waypoint = new Waypoint({
+					element: document.getElementById('shiva'),
+					handler: function(direction) {
+						countDigits();
+					},
+				offset: '100%'
+			})
+			}
+		
+			function countDigits() {
+				if (alreadyCounted)
+				{
+					return;
+				}
+				
+				alreadyCounted = true;
+			
+			$('.count').each(function ()
+			{
+				$(this).prop('Counter', 0).animate({Counter:$(this).text()}, {duration: 4000, easing: 'swing', step : function(now) {$(this).text(Math.ceil(now));} });
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header class="top">
+				<div class="container">
+					<div class="grid-12">
+						<nav class="main-menu">
+							<ul>
+								<li class="active"><a href="">Афиша</a></li>
+								<li><a href="">Партнерство</a></li>
+								<li><a href="">Галерея</a></li>
+								<li><a href="">Контакты</a></li>
+								<li><a href="">Цены</a></li>
+								<li><a class="logo-img" href=""></a></li>
+								<li><a href="">Услуги</a></li>
+								<li><a href="">Акции</a></li>
+								<li><a href="">История</a></li>
+								<li><a href="">Команда</a></li>
+								<li><a href="">Экскурсия</a></li>
+							</ul>
+						</nav>			
+					</div>
+				</div>
+			</header>
+			<section>
+				<div>
+					<article class="slider">
+						<div id="scrollingImage1" class="strip strip-01"></div>
+						<div id="scrollingImage2" class="strip strip-02"></div>
+						<div id="scrollingImage3" class="strip strip-03"></div>
+					</article>
+				</div>
+			</section>
+			<section class="container">
+				<div class="grid-12">
+					<article class="text-head">
+						<h1>Здесь вы сможете расправить <a href="">Крылья</a> своих желаний, фантазий, нежности, радости, веселья, счастья, открытости и творчества. Можно просто мягко укутаться в <a href="">Крыльях спокойствия</a>, уюта и теплоты.</h1>
+					</article>
+				</div>
+			</section>
+			<div class="background-services">
+				<section class="container">
+					<div class="grid-12">
+						<article id="shiva" class="services">
+						<h2>Мы хотим вам предложить:</h2>
+							<div class="col3">
+								<div class="item">
+								<div id="shiva"></div>
+									<ul>
+										<li><span class="count">382</span>книги</li>
+										<li><span class="count">73</span>шкафчика</li>
+										<li><span class="count">66</span>настольных игр</li>
+										<li><span class="count">59</span>кружек</li>
+										<li><span class="count">41</span>магнитик на холодильник</li>
+										<li><span class="count">35</span>подставок под кружки</li>
+										<li><span class="count">34</span>тарелки</li>
+										<li><span class="count">29</span>игр для Sega</li>
+										<li><span class="count">27</span>чайных ложек</li>
+										<li><span class="count">24</span>стула</li>
+										<li><span class="count">15</span>игр для X-box</li>
+										<li><span class="count">15</span>игр для PS3</li>
+										<li><span class="count">12</span>бинбегов</li>
+										<li><span class="count">11</span>столов</li>
+										<li><span class="count">10</span>подушек</li>	
+									</ul>
+								</div>
+								<div class="item">
+									<ul>
+										<li><span class="count">7</span>мягких подоконников</li>
+										<li><span class="count">7</span>сортов чая</li>										
+										<li><span class="count">5</span>пледов</li>			
+										<li><span class="count">5</span>мягких игрушек</li>
+										<li><span class="count">5</span>гитар</li>
+										<li><span class="count">5</span>паззлов</li>
+										<li><span class="count">5</span>сортов печенья</li>
+										<li><span class="count">4</span>дивана</li>
+										<li><span class="count">4</span>чайника для заварки</li>
+										<li><span class="count">3</span>комнаты</li>
+										<li><span class="count">3</span>маски Бетмена</li>
+										<li><span class="count">3</span>мячика для жонглирования</li>
+										<li><span class="count">3</span>ложки для обуви</li>
+										<li><span class="count">2</span>ситечка для заварки</li>
+										<li><span class="count">2</span>кондиционера</li>
+									</ul>
+								</div>
+								<div class="item">
+									<ul>
+										<li><span class="count">2</span>игровые приставки</li>
+										<li><span class="count">2</span>звоночка</li>
+										<li><span class="count">1</span>настольная лампа</li>
+										<li><span class="count">1</span>sega</li>
+										<li><span class="count">1</span>ноутбук</li>
+										<li><span class="count">1</span>летопись</li>
+										<li><span class="count">1</span>калабас</li>
+										<li><span class="count">1</span>кулер</li>
+										<li><span class="count">1</span>микроволновка</li>
+										<li><span class="count">1</span>быстрый wifi</li>
+										<li><span class="count">1</span>крыло</li>
+										<li><span class="count">1</span>кофемашина</li>
+										<li><span class="count">1</span>экран</li>
+										<li><span class="count">1</span>проектор</li>
+										<li><span class="count">0</span>нетрезвых людей</li>
+									</ul>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+			<div class="background-afisha">
+				<section class="container">
+					<h2>Ближайшие мероприятия</h2>
+					<div class="col2">
+						<article class="item p-rigth">
+							<a href="">
+								<img src="css/img/craig.jpg">
+							</a>
+							<h3><a href="">Название мероприятия</a></h3>
+							<p class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  itaque amet voluptate mollitia distinctio tempora possimus quidem nisi odio cumque ipsa, voluptatem dolores quibusdam molestiae fugiat vero eum atque itaque amet voluptate mollitia distinctio tempora possimus quidem nisi odio cumque ipsa, voluptatem dolores quibusdam molestiae fugiat vero eum atque dolor sit amet, consectetur adipisicing elit.  itaque amet voluptate mollitia distinctio tempora possimus quidem nisi odio cumque ipsa, voluptatem dolores quibusdam molestiae fugiat vero eum atque itaque a dolor sit amet, consectetur adipisicing elit.  itaque amet voluptate mollitia distinctio tempora possimus quidem nisi odio cumque ipsa, voluptatem dolores quibusdam molestiae fugiat vero eum atque itaque a</p>
+							<p><span>Дата:</span> dolor sit amet</p>
+							<p><span>Время начала:</span> dolor sit amet</p>
+							<p><span>Стоимость:</span> dolor sit amet</p>
+							<p><a href="">Подробнее</a></p>
+						</article>
+						<article class="item">
+							<a href="">
+								<img src="css/img/kate-hp.jpg">
+							</a>
+							<h3><a href="">Название мероприятия</a></h3>
+							<p class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit itaque amet voluptate mollitia distinctio tempora possimus quidem nisi odio cumque ipsa, voluptatem dolores quibusdam molestiae fugiat vero eum atque </p>
+							<p><span>Дата:</span> dolor sit amet</p>
+							<p><span>Время начала:</span> dolor sit amet</p>
+							<p><span>Стоимость:</span> dolor sit amet</p>
+							<p><a href="">Подробнее</a></p>
+						</article>
+					</div>
+					<p class="i-item">
+						<a href=""><i class="fa fa-vk"></i></a>
+						<a href=""><i class="fa fa-instagram"></i></a>
+					</p>
+					<p class="p-rigth"><a href="">Смотреть все</a></p>
+				</section>
+			</div>
+			<div class="background-partners">
+				<section class="container">
+					<h2>Партнерство</h2>
+					<div class="grid-12">
+						<div class="partners-scale">
+							<div class="col2">
+								<div class="item">
+									<a class="img_scale thumb">
+										<img src="css/img/craig.jpg" alt="">
+										<span class="thumb_overlay">Проведение детского дня рождения</span>
+									</a>
+								</div>
+								<div class="item">
+									<a class="img_scale thumb">
+										<img src="css/img/craig.jpg" alt="">
+										<span class="thumb_overlay">Проведение дня рождения</span>
+									</a>
+								</div>
+								<div class="item">
+									<a class="img_scale thumb">
+										<img src="css/img/craig.jpg" alt="">
+										<span class="thumb_overlay">Заказать игру в мафию</span>
+									</a>
+								</div>
+								<div class="item">
+									<a class="img_scale thumb">
+										<img src="css/img/craig.jpg" alt="">
+										<span class="thumb_overlay">Аренда помещения</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</section>
+			</div>
+			<!--slider-->
+				<div class="slider-bg-color">
+				<section class="container">
+					<h2>Посмотрите, что о нас говорят</h2>
+					<div class="grid-12">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						  <div class="item active">
+						      <div class="col5">
+								<article class="item">
+									<p class="h-recall">Марина А.</p>
+									<p class="ellipsis recall">Благодарю зеркальную мастерскую Vintage-Design за прекрасную идею и великолепное её Благодарю зеркальную мастерскую Vintage-Design за прекраc</p>
+								</article>
+								<article class="item">
+									<p class="h-recall">Дизайнер Андрюшов Михаил.</p>
+									<p class="ellipsis recall">Доброго времени суток! За долгое время проектно-дизайнерской деятельности я наконец-то нашел в лице зеркальной мастерской Vintage-Design надежного партнера, способного воплотить в жизнь любой, даже самый креативный и сложный замысел. </p>
+								</article>
+								<article class="item">
+									<p class="h-recall">Александр Корнеев</p>
+									<p class="recall">Спасибо винтажной мастерской за отличное зеркало! Заказал в офис, очень доволен.</p>
+								</article>
+								<article class="item">
+									<p class="h-recall">Рассказова Жанна</p>
+									<p class="ellipsis recall">Всю жизнь мечтала о красивом зеркале как у принцессы. В компании Винтаж Дизайн осуществили мою мечту и создали чудесное зеркало с состаренном стиле! Обязательно посоветую именно вашу мастерскую своим друзьям и знакомым!</p>
+								</article>
+								<article class="item">
+									<p class="h-recall">Елистратов Евгений</p>
+									<p class="ellipsis recall">Благодарю зеркальную мастерскую Vintage Design за чудесное исполнение моего заказа. Радуюсь отличному зеркалу с Led-подсветкой. Спасибо, друзья!</p>
+								</article>
+							</div>
+							</div>
+						    <div class="item">
+						      <div class="col5">
+								<article class="item">
+									<p class="h-recall">Марина А.</p>
+									<p class="ellipsis recall">Благодарю зеркальную мастерскую Vintage-Design за прекрасную идею и великолепное её Благодарю зеркальную мастерскую Vintage-Design за прекраc</p>
+								</article>
+								<article class="item">
+									<p class="h-recall">Дизайнер Андрюшов Михаил.</p>
+									<p class="ellipsis recall">Доброго времени суток! За долгое время проектно-дизайнерской деятельности я наконец-то нашел в лице зеркальной мастерской Vintage-Design надежного партнера, способного воплотить в жизнь любой, даже самый креативный и сложный замысел. </p>
+								</article>
+								<article class="item">
+									<p class="h-recall">Александр Корнеев</p>
+									<p class="recall">Спасибо винтажной мастерской за отличное зеркало! Заказал в офис, очень доволен.</p>
+								</article>
+								<article class="item">
+									<p class="h-recall">Рассказова Жанна</p>
+									<p class="ellipsis recall">Всю жизнь мечтала о красивом зеркале как у принцессы. В компании Винтаж Дизайн осуществили мою мечту и создали чудесное зеркало с состаренном стиле! Обязательно посоветую именно вашу мастерскую своим друзьям и знакомым!</p>
+								</article>
+								<article class="item">
+									<p class="h-recall">Елистратов Евгений</p>
+									<p class="ellipsis recall">Благодарю зеркальную мастерскую Vintage Design за чудесное исполнение моего заказа. Радуюсь отличному зеркалу с Led-подсветкой. Спасибо, друзья!</p>
+								</article>
+							</div>
+						  </div>
+						</div>
+						<!-- Controls -->
+							  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"></a>
+							  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"></a>
+						 <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+						  </ol>
+					</div>
+						<p class="p-rigth"><a href="">Смотреть все</a></p>
+					</section>
+					</div>
+				<!--slider-->
+			<footer id="footer" class="bottom-menu">
+				<section class="container">
+					<div class="grid-12">
+						<div class="text-bottom">
+							<p>Связаться с нами</p>
+						</div>
+							<p class="p-i">Оставьте номер своего телефона, если вас что-то заинтересовало и мы вам перезвоним</p>
+						<form>
+							<p><input class="field" placeholder="+7 987 123 45 67" class="form-input" type="text" value="" name="NAME" size="40" required></p>
+							<p><input class="bt" type="submit" value="Отправить"></p>
+						</form>
+						<ul>
+							<li><a href="">Афиша</a></li>
+							<li><a href="">Партнерство</a></li>
+							<li><a href="">Галерея</a></li>
+							<li><a href="">Контакты</a></li>
+							<li><a href="">Цены</a></li>
+							<li><a href="">Отзывы</a></li>
+							<li><a href="">Услуги</a></li>
+							<li><a href="">Акции</a></li>
+							<li><a href="">История</a></li>
+							<li><a href="">Команда</a></li>
+							<li><a href="">Экскурсия</a></li>
+						</ul>
+						<p class="contacts">
+							<span>Телефон: +7 (987) 123 45 67</span>
+							<span>Адрес: г.Пенза, ул.Московская, 107</span>
+							<span>Email: <a href="">studio-m@gmail.ru</a></span>
+						</p>
+						<p class="i-item">
+							<a href=""><i class="fa fa-vk"></i></a>
+							<a href=""><i class="fa fa-instagram"></i></a>
+						</p>
+						<a href=""><img src="css/img/logo.png"></a>
+					</div>
+				</section>	
+				<section class="copy">
+					<div class="container">
+						<div class="grid-12">
+							<p>Все права сохранены, 2015 Антикафе Крылья. Разработка сайта: <a class="m-studio" href="http://studios-m.ru" title="Мы делаем сайты" target="_blank">Студия М</a></p>
+						</div>
+					</div>
+				</section>
+					</div>
+				</div>
+				
+			</footer>
+		</div>
+		
+		
+		<script type="text/javascript">
+			var alreadyCounted = false;
+			init();
+			</script>
+			
+	</body>
+</html>	
